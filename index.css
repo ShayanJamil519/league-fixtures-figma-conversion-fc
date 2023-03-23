@@ -1,0 +1,277 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  width: 1920px;
+  min-height: 1080px;
+  font-family: "Inter", sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 107px;
+  background-color: #3d95e6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+  padding: 0 80px 0 40px;
+}
+
+header h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+}
+
+header h1 span {
+  font-weight: 400;
+}
+
+header .schedule__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+header .date__container {
+  background-color: #036bca;
+  width: 216px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px;
+}
+
+header .date__container p {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+header .schedule__container h3 {
+  font-weight: 600;
+  font-size: 28px;
+}
+
+/*  Fixtures Section  */
+
+section {
+  display: flex;
+  gap: 25px;
+  padding: 18px 30px;
+}
+
+.fixtures__container {
+  flex: 0.5;
+  /* width: 904px; */
+  height: 948px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 0px 5px 0px 0px;
+}
+
+.fixtures__container .table__header {
+  display: flex;
+  justify-content: space-between;
+  padding: 7px 35px 8px 18px;
+}
+
+/* Table Header Left Container */
+
+.table__header .left__container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.table__header .left__container hr {
+  background-color: #5bffff;
+  width: 266px;
+  height: 5px;
+  border: none;
+  outline: none;
+  border-radius: 3.5px;
+}
+
+.table__header .left__container .logo__container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.table__header .left__container .logo__container img {
+  width: 54px;
+  height: 47px;
+}
+
+.table__header .left__container .logo__container div {
+  display: flex;
+  flex-direction: column;
+}
+
+.table__header .left__container .logo__container div h1 {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.table__header .left__container div h2 {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+/* Table Header Right Container */
+
+.table__header .right__container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 68px;
+  padding-bottom: 10px;
+}
+
+.table__header .right__container h1:nth-child(1) {
+  margin-right: -30px;
+}
+
+.table__header .right__container h1 {
+  color: #5e5656;
+  font-size: 18px;
+  font-weight: 900;
+}
+
+/* Table Body */
+
+.fixtures__container .fixture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 23px;
+  padding: 9px 0;
+  border-bottom: 0.5px solid #00738e;
+}
+
+.fixtures__container .fixture1 {
+  border-top: 0.5px solid #828282;
+  margin-top: -11px;
+}
+
+.fixture .fixture__scheduler {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.fixture .fixture__scheduler h1 {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.fixture .fixture__scheduler h2 {
+  margin-top: 3px;
+  font-weight: 600;
+  font-size: 17px;
+  color: #062cb2;
+}
+
+.fixture .fixture__teams {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 131px;
+  height: 59px;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+}
+
+.fixture .fixture__name {
+  width: 200px;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 22px;
+}
+
+.fixture .fixture__code {
+  display: grid;
+  place-items: center;
+  width: 106px;
+  height: 46px;
+  background: #f0fff2;
+  border: 1px solid #397c40;
+  border-radius: 5px;
+}
+
+.fixture .fixture__code p {
+  color: #ee3524;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.fixture .fixture__home {
+  display: grid;
+  place-items: center;
+  width: 86px;
+  height: 46px;
+  background: #f9f9f9;
+  border: 1px solid #d5d5d5;
+  border-radius: 5px;
+}
+
+.fixture .fixture__home p {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.fixture .fixture__draw {
+  display: grid;
+  place-items: center;
+  width: 86px;
+  height: 46px;
+  background: #f9f9f9;
+  border: 1px solid #d5d5d5;
+  border-radius: 5px;
+}
+
+.fixture .fixture__draw p {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.fixture:nth-child(5) .fixture__draw {
+  display: grid;
+  place-items: center;
+  width: 86px;
+  height: 46px;
+  background: #fee3e3;
+  border: 1px solid #ee3524;
+  border-radius: 5px;
+}
+
+.fixture:nth-child(5) .fixture__draw p {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.fixture .fixture__away {
+  display: grid;
+  place-items: center;
+  width: 86px;
+  height: 46px;
+  background: #f9f9f9;
+  border: 1px solid #d5d5d5;
+  border-radius: 5px;
+}
+
+.fixture .fixture__away p {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+}
